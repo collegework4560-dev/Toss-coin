@@ -1,0 +1,59 @@
+body{
+  height:100vh;
+  width:100vw;
+  background-color:#656839;
+  font-family:cursive;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:#BDDBD0;
+}
+#container{
+  height:50vh;
+  width:100vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  gap:50px;
+}
+#coin{
+  height:65%;
+  width:65%;
+  background-color: #514B23;
+  border:3px solid #CBC9AD;
+  color:#6051351;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:3em;
+  
+  
+}
+#startBtn{
+  height:20%;
+  width:40%;
+  font-family:cursive;
+  border:3px solid #CBC9AD;
+  font-size:1em;
+  border-radius:10px;
+  background-color:#919184;
+  color:#CBD0B9;
+}
+#startBtn:active{
+  background-color:#D9D9CA;
+  color:#6C6B67;
+}
+.flip {
+  animation: toss 2s ease-in-out 0s 1;
+}
+
+/* Keyframes */
+@keyframes toss {
+  0%   { transform: rotateX(0deg); }
+  25%  { transform: rotateX(180deg); }
+  50%  { transform: rotateX(360deg); }
+  75%  { transform: rotateX(540deg); }
+  100% { transform: rotateX(720deg); }
+}
